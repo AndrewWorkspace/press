@@ -1,0 +1,78 @@
+.marked-lists-wrap{
+	justify-content: center;
+	margin-top: 20px;
+	@include media-breakpoint-up(md) {
+		margin-top: -30px;
+		justify-content: start;
+	}
+	display: flex;
+	margin-left: -25px;
+	> * {
+		margin-left: 25px;
+	}
+}
+
+.marked-list{
+	font-size: 10px;
+	li{
+		position: relative;
+		padding-left: 12px;
+		img{
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			border-radius: 50%;
+		}
+	}
+}
+
+
+.list-colored{
+	max-width: 210px;
+	width: 100%;
+	font-size: 10px;
+	li{
+		position: relative;
+		padding: 8px 15px;
+		display: flex;
+		align-items: center;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 2px;
+			transition: all ease .25s;
+			border-top-width: 10px;
+			
+		}
+		&:nth-child(odd){
+			background-color: rgba($green,.1);
+			span{
+				color: $green;
+			}
+			&:before{
+				background-color: $green;
+			}
+		}
+		&:nth-child(even){
+			background-color: rgba($blue,.1);
+			span{
+				color: $blue;
+			}
+			&:before{
+				background-color: $blue;
+			}
+		}
+		span{
+			margin-right: 10px;
+			font-size: 30px;
+			line-height: 1;
+		}
+	}
+	li + li{
+		margin-top: 15px;
+	}
+}

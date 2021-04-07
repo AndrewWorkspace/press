@@ -1,0 +1,5 @@
+
+// Light Backgrounds
+.bg-default {
+	@include bg-behaviour($body-bg);
+}
