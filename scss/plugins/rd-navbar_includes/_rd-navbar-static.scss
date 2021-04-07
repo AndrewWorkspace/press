@@ -50,7 +50,8 @@
 
 		> .rd-navbar-submenu-toggle {
 			margin-left: 4px;
-			font-family: "Material Design Icons";
+			color: $primary;
+			font-family: "FontAwesome";
 			font-size: 16px;
 			cursor: pointer;
 
@@ -58,11 +59,11 @@
 				position: relative;
 				display: inline-block;
 				transition: .22s;
-				content: '\f236';
+				content: "\f107";
 			}
 
 			&:hover {
-				color: $rd-navbar-nav-hover-color;
+				color: $primary;
 			}
 		}
 
@@ -73,18 +74,29 @@
 	}
 
 	.rd-nav-item + .rd-nav-item {
+		@media(min-width: 992px){
+			margin-left: $navbar-static-nav-indent - 20;
+		}
+		@media(min-width: 1200px){
+			margin-left: $navbar-static-nav-indent / 2;
+		}
+		@media(min-width: 1360px){
 		margin-left: $navbar-static-nav-indent;
+		}
 	}
 
 	// Rd Nav Link 1-st level
 	.rd-nav-link {
 		position: relative;
 		display: inline-block;
-		color: $rd-navbar-nav-color;
+		color: $primary;
 		font-size: 16px;
+		@media(min-width: 1200px){
+			font-size: 18px;
+		}
 		line-height: 1.2;
 		transition: .25s;
-
+		text-transform: uppercase;
 		&:hover {
 			color: $rd-navbar-nav-hover-color;
 		}
@@ -95,7 +107,7 @@
 		z-index: 15;
 		position: absolute;
 		display: block;
-		margin-top: 22px;
+		margin-top: 10px;
 		visibility: hidden;
 		opacity: 0;
 		text-align: left;

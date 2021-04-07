@@ -2,7 +2,7 @@
 
 // RD Navbar variables
 $rd-navbar-static-width: map-get($container-max-widths, xl) - 30px;
-$navbar-static-nav-indent: 42px;
+$navbar-static-nav-indent: 30px;
 
 $rd-navbar-min-font-size: 24px;
 $rd-navbar-min-line-height: 48px;
@@ -30,7 +30,7 @@ $rd-navbar-nav-active-background: $rd-navbar-nav-hover-background;
 // RD Navbar Dropdown
 $rd-navbar-dropdown-width: 270px;
 $rd-navbar-dropdown-background: $white;
-$rd-navbar-dropdown-item-color: $gray-500;
+$rd-navbar-dropdown-item-color: $body-color;
 $rd-navbar-dropdown-item-background: transparent;
 $rd-navbar-dropdown-item-hover-color: $primary;
 $rd-navbar-dropdown-item-hover-background: transparent;

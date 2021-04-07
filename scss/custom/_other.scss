@@ -3,13 +3,11 @@
 }
 
 .container-sm{
-	max-width: 720px;
+	@media(min-width: 1200px){
+		max-width: 1370px;
+	}
 }
 
 .container-md{
 	max-width: 950px;
-}
-
-.title-creative + .list-colored{
-	margin-top: 30px;
 }
