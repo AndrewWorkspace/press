@@ -11,7 +11,7 @@ $rd-navbar-min-height: 56px;
 $rd-navbar-color: $gray-700;
 $rd-navbar-background: $white;
 $rd-navbar-shadow: 0 0 22px -4px rgba(0, 0, 0, 0.17);
-$rd-navbar-border: 1px solid $gray-200;
+$rd-navbar-border: 1px solid #0000;
 $rd-navbar-width: 1200px;
 
 // RD Navbar Panel
@@ -73,7 +73,6 @@ $rd-navbar-toggle-color: $gray-300;
 	display: none;
 }
 
-.rd-navbar,
 .rd-menu,
 .rd-navbar-nav,
 .rd-navbar-panel {
@@ -97,7 +96,7 @@ $rd-navbar-toggle-color: $gray-300;
 			$rd-navbar-toggle-preset,
 			$rd-navbar-min-line-height,
 			$rd-navbar-min-font-size,
-			$border-radius,
+			0,
 			$rd-navbar-toggle-color
 	);
 	background-color: transparent;

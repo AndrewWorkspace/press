@@ -87,7 +87,7 @@ $rd-navbar-sidebar-width: map-get($container-max-widths, xl);
 		overflow-x: hidden;
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
-		border-top: 1px solid $gray-200;
+		border-top: 1px solid #0000;
 	}
 
 	.rd-nav-item {
@@ -107,11 +107,11 @@ $rd-navbar-sidebar-width: map-get($container-max-widths, xl);
 		}
 
 		+ .rd-nav-item {
-			border-top: 1px solid $gray-200;
+			border-top: 1px solid #0000;
 		}
 
 		&:last-child {
-			border-bottom: 1px solid $gray-200;
+			border-bottom: 1px solid #0000;
 			margin-bottom: 30px;
 		}
 	}
