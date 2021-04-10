@@ -9,9 +9,8 @@
 	align-items: center;
 	justify-content: center;
 	font-family: $font-base;
-	font-size: 12px;
-	font-weight: 400;
-	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	text-align: center;
@@ -19,10 +18,11 @@
 	vertical-align: middle;
 	user-select: none;
 	transition: 250ms all ease-in-out;
-	min-height: 49px;
+	min-height: 46px;
 	padding: 0 10px;
 	border: none;
 	line-height: 1;
+	border-radius: 5px;
 	> * {
 		pointer-events: none;
 	}
@@ -37,24 +37,13 @@
 }
 
 
-.button-xs{
-	min-width: 112px;
-	height: 28px;
-	min-height: 28px;
-	font-size: 10px;
-}
-
 .button-primary{
 	background-color: $primary;
-	color: #fff;
-	font-weight: 700;
-	box-shadow: 0px 10px 10px 0px rgba(254,192,76,0.35);
+	color: $white;
+	transition: $transition-base;
 	&:hover{
-		box-shadow: none;
+		box-shadow: 0px 3px 10px 0px rgba(254,0,0,0.45);
+		color: $white;
+		transition: $transition-base;
 	}
-}
-
-
-.button-rounded{
-	border-radius: 24px;
 }

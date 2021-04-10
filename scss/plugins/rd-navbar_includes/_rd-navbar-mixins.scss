@@ -112,7 +112,7 @@
 		&:before,
 		& {
 			width: $font-size;
-			height: round($font-size / 6);
+			height: 2px;
 			background-color: #525458;
 			backface-visibility: hidden;
 			border-radius: $border-radius;
@@ -342,10 +342,10 @@
 	}
 }
 
-@mixin make-toggle($preset: "button-lines-arrow-2", $size: 48px, $font-size: 24px, $border-radius: 2px, $color: #111111) {
+@mixin make-toggle($preset: "button-lines-arrow-2", $size: 46px, $font-size: 24px, $border-radius: 2px, $color: #111111) {
 	display: inline-block;
 	position: relative;
-	width: $size;
+	width: 40px;
 	height: $size;
 	line-height: $size;
 	cursor: pointer;
