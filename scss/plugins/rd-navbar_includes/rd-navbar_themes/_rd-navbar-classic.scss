@@ -6,8 +6,6 @@
 .rd-navbar-classic {
 	// Static
 	&.rd-navbar-static {
-		border-bottom: 1px solid transparent;
-		
 		.rd-navbar-aside-outer,
 		.rd-navbar-main-outer {
 			padding-left: $grid-gutter-width / 2;
@@ -135,6 +133,9 @@
 		
 		.rd-nav-panel-main {
 			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
 		}
 		.rd-nav-aside {
 			display: flex;

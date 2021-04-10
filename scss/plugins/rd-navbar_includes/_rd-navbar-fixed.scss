@@ -78,7 +78,7 @@ $rd-navbar-fixed-submenu-toggle-focus-color: $white;
 		bottom: -$rd-navbar-min-height;
 		z-index: $zindex-rd-navbar - 1;
 		width: $rd-navbar-nav-min-width;
-		padding: $rd-navbar-min-height  * 2 0 ($rd-navbar-min-height + 25px);
+		padding: $rd-navbar-min-height  * 2 + 18 0 ($rd-navbar-min-height + 25px);
 		overflow-y: auto;
 		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;
@@ -389,7 +389,7 @@ $rd-navbar-fixed-submenu-toggle-focus-color: $white;
 	.rd-navbar-nav-wrap {
 		color: $white;
 		background: $rd-navbar-background;
-		border: $rd-navbar-border;
+		border: none;
 	}
 
 	// RD Navbar Nav
@@ -482,6 +482,6 @@ $rd-navbar-fixed-submenu-toggle-focus-color: $white;
 
 html.rd-navbar-fixed-linked {
 	.page {
-		padding-top: $rd-navbar-fixed-height;
+		padding-top: 90px;
 	}
 }

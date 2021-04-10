@@ -3,3 +3,6 @@
 .bg-default {
 	@include bg-behaviour($body-bg);
 }
+.bg-yellow{
+	background-color: $yellow;
+}
