@@ -41,20 +41,23 @@ h2,
 h3,
 .h3 {
 	line-height: 1.2;
-	font-size: 24px;
+	font-size: 22px;
+	font-weight: 500;
 	@include media-breakpoint-up(xl) {
-		font-size: 26px;
+		font-size: 24px;
 	}
-	
 }
 
 h4,
 .h4 {
-	font-size: 20px;
+	font-weight: 700;
+	font-size: 18px;
 	@include media-breakpoint-up(xl) {
-		font-size: 24px;
+		font-size: 20px;
 	}
-	
+	span{
+		color: #aaa;
+	}
 }
 
 h5,

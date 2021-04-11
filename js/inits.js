@@ -127,5 +127,41 @@ Reference: http://jsfiddle.net/BB3JK/47/
 			$list.hide();
 		});
 		
+		var swiper = new Swiper('.swiper-popular-news', {
+			spaceBetween: 20,
+			freeMode: true,
+			slidesPerView: 1,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			loop: false,
+			navigation: {
+				nextEl: '.slider-nav-next',
+				prevEl: '.slider-nav-prev',
+			},
+			breakpoints: {
+				320: {
+					spaceBetween: -30,
+					slidesPerView: 1,
+					centeredSlides: true,
+				},
+				576: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 3,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+				1200: {
+					slidesPerView: 5,
+					
+				},
+			},
+		});
+		
 	});
 }());
