@@ -132,7 +132,7 @@ Reference: http://jsfiddle.net/BB3JK/47/
 			freeMode: true,
 			slidesPerView: 1,
 			autoplay: {
-				delay: 2500,
+				delay: 4000,
 				disableOnInteraction: false,
 			},
 			loop: false,
@@ -148,7 +148,80 @@ Reference: http://jsfiddle.net/BB3JK/47/
 				},
 				576: {
 					slidesPerView: 2,
-					spaceBetween: 20,
+					spaceBetween: 20
+				},
+				768: {
+					slidesPerView: 3,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+				1200: {
+					slidesPerView: 5,
+					
+				},
+			},
+		});
+		
+		
+		var swiperArticles = new Swiper('.swiper-popular-articles', {
+			spaceBetween: 20,
+			freeMode: true,
+			slidesPerView: 1,
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+			},
+			loop: false,
+			navigation: {
+				nextEl: '.slider-articles-nav-next',
+				prevEl: '.slider-articles-nav-prev',
+			},
+			breakpoints: {
+				320: {
+					spaceBetween: -30,
+					slidesPerView: 1,
+					centeredSlides: true,
+				},
+				576: {
+					slidesPerView: 2,
+					spaceBetween: 20
+				},
+				768: {
+					slidesPerView: 3,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+				1200: {
+					slidesPerView: 4,
+				},
+			},
+		});
+		
+		
+		var swiperNewArticles = new Swiper('.swiper-new-articles', {
+			spaceBetween: 20,
+			freeMode: true,
+			slidesPerView: 1,
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+			},
+			loop: false,
+			navigation: {
+				nextEl: '.slider-new-nav-next',
+				prevEl: '.slider-new-nav-prev',
+			},
+			breakpoints: {
+				320: {
+					spaceBetween: -30,
+					slidesPerView: 1,
+					centeredSlides: true,
+				},
+				576: {
+					slidesPerView: 2,
+					spaceBetween: 20
 				},
 				768: {
 					slidesPerView: 3,
