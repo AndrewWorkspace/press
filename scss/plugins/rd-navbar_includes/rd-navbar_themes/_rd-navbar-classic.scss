@@ -207,11 +207,16 @@
 	
 	&.rd-navbar-fixed {
 		.rd-nav-options {
-			display: none;
+			position: fixed;
+			top: 54px;
+			right: 6px;
+			z-index: 2000;
 		}
 		
 		.rd-navbar-panel {
 			.rd-nav-options {
+				position: static;
+				min-width: 60px;
 				display: flex;
 				margin-right: 5px;
 			}
