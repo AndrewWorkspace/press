@@ -2,6 +2,10 @@
 	max-width: 1000px;
 }
 
+.card{
+	border: none;
+}
+
 .card-info{
 	&__main{
 		display: flex;
@@ -115,6 +119,7 @@
 	max-width: 306px;
 	&__action{
 		display: flex;
+		margin-top: 10px;
 		.button{
 			width: 100%;
 		}
