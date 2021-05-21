@@ -65,9 +65,9 @@
 			flex-grow: 1;
 		}
 		&-media{
-			margin-left: 15px;
+			margin-right: 20px;
 			@media(min-width: 576px){
-				margin-left: 40px;
+				margin-right: 20px;
 			}
 			max-width: 130px;
 			width: 100%;
