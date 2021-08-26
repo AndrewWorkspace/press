@@ -1,9 +1,7 @@
 .multiply-slider-wrap{
 	display: block;
 	overflow: hidden;
-	@media(min-width: 1200px){
-		position: relative;
-	}
+	
 	.gallery-top{
 		position: relative;
 		.swiper-button-next,.swiper-button-prev{
@@ -45,14 +43,23 @@
 		
 		.swiper-slide{
 			text-align: center;
-			a{
-				display: flex;
-				justify-content: center;
+			p{
+				margin-top: 10px;
+			}
+			a,p{
+				display: block;
+				text-align: center;
 				margin-right: auto;
 				margin-left: auto;
 				@media(min-width: 1200px){
 					max-width: 480px;
 				}
+			}
+			a{
+				display: flex;
+				justify-content: center;
+				margin-right: auto;
+				margin-left: auto;
 				img{
 					@media(min-width: 576px){
 						min-height: 400px;
@@ -76,10 +83,6 @@
 		}
 		@media(min-width: 1200px){
 			max-width: 920px;
-			position: absolute;
-			bottom: 25px;
-			left: 50%;
-			transform: translateX(-50%);
 		}
 		width: 100%;
 		z-index: 20;
