@@ -369,4 +369,62 @@
 			},
 		},
 	});
+	
+	var galleryThumbs = new Swiper('.gallery-thumbs', {
+		spaceBetween: 10,
+		slidesPerView: 4.5,
+		speed: 500,
+		loop: true,
+		slideToClickedSlide: true,
+		touchRatio: 0.2,
+		loopedSlides: 8,
+		centeredSlides: true,
+		breakpoints: {
+			576: {
+				slidesPerView: 5,
+			},
+			768: {
+				slidesPerView: 5,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+			1200: {
+				slidesPerView: 7,
+			},
+		},
+	});
+	var galleryTop = new Swiper('.gallery-top', {
+		spaceBetween: 0,
+		slidesPerView: 1,
+		loopedSlides: 8,
+		centeredSlides: true,
+		speed: 500,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+	
+	galleryTop.controller.control = galleryThumbs;
+	galleryThumbs.controller.control = galleryTop;
+	
+	
+	$('[data-fancybox="images"]').fancybox({
+		selector : '.swiper-slide-fancy:not(.swiper-slide-duplicate)',
+		hash     : false,
+		helpers : {
+			media : {}
+		},
+		buttons : [
+			'zoom',
+			'fullScreen',
+			'close',
+			'thumbs',
+			
+		],
+		
+	});
+	
 }());
