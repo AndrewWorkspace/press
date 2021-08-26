@@ -30,7 +30,9 @@
 				bottom: 75px;
 				top: auto;
 				&:after{
+					background: none;
 					font-size: 40px;
+					color: #000;
 				}
 			}
 		}
